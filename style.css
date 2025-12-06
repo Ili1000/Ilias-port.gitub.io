@@ -1,10 +1,10 @@
-body{
+.body{
     background-color: darkgoldenrod;
     text-align: center;
     font-family: Arial, sans-serif;
     color: white;
 }
-title{
+.title{
     background-color: black;
     border: 2px solid black;
     padding: 20px;
