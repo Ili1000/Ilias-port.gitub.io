@@ -57,8 +57,6 @@ body{
     grid-column-end: 3;
     background-color: black;
     border-radius: 25px;
-
-    display: flex;
     align-items: left;
    
     font-size: 40px; 
