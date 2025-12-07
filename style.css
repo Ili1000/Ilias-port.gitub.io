@@ -31,7 +31,7 @@ body::before{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 1fr 70px;
+    grid-template-rows: 200px 1fr 70px;
     gap: 10px;
 
     padding:10px;
@@ -40,7 +40,7 @@ body::before{
 
 /*waaarom deze?*/
 .container div{
-    padding: 10px;
+    padding: 50px;
     border:1px solid transparent; ;
 }
 
@@ -55,8 +55,8 @@ body::before{
     justify-content: center;
     align-items: center;
    
-    font-size: 40px; 
-    padding: 20px;
+    font-size: 70px; 
+   
 }
 
 .intro{
@@ -66,7 +66,7 @@ body::before{
     grid-row-end: span 1;
     border-radius: 25;
     align-items: left;
-    padding: 10px;
+  
 }
 
 .footer{
@@ -78,7 +78,6 @@ body::before{
     border-radius: 25px;
    
     font-size: 20px; 
-    padding: 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
