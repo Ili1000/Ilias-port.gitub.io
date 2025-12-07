@@ -44,13 +44,13 @@ body{
     grid-row-start: 2;
     grid-row-end: span 2;
     background-color: black;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
 .footer{
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: black;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
