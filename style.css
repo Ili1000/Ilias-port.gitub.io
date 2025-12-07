@@ -2,7 +2,7 @@ body{
     background-color: darkgoldenrod;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: left;
     color: white;
 }
 
@@ -44,7 +44,7 @@ body{
     grid-row-start: 2;
     grid-row-end: span 2;
     background-color: black;
-    border-radius: 0.5fr;
+    border-radius: 50%;
 }
 
 .footer{
