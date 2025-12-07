@@ -49,6 +49,7 @@ body::before{
     grid-column-end: 2;
     border-radius: 25px;
     color: goldenrod;
+    background-color: black;
 
     display: flex;
     justify-content: center;
