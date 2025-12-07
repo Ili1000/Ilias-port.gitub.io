@@ -31,9 +31,10 @@ body{
 
 .header{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     background-color: black;
     border-radius: 25px;
+    text/size: 40px;
     
 
 }
@@ -44,7 +45,7 @@ body{
     grid-row-start: 2;
     grid-row-end: span 2;
     background-color: black;
-    border-radius: 15%;
+    border-radius: 7%;
 }
 
 .footer{
