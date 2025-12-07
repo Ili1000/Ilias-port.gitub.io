@@ -28,3 +28,14 @@ body{
     padding: 10px;
     border:1px solid black;
 }
+
+.Header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.intro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
