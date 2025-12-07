@@ -2,7 +2,7 @@ body{
     background-color: darkgoldenrod;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
@@ -33,6 +33,8 @@ body{
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: black;
+    border-radius: 25px;
+    
 
 }
 
@@ -42,11 +44,13 @@ body{
     grid-row-start: 2;
     grid-row-end: span 2;
     background-color: black;
+    border-radius: 0.5fr;
 }
 
 .footer{
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: black;
+    border-radius: 50px;
 }
 
