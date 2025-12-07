@@ -34,9 +34,13 @@ body{
     grid-column-end: 2;
     background-color: black;
     border-radius: 25px;
-   
-    
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 40px; 
+    padding: 20px;
 }
 
 .intro{
