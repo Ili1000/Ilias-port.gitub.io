@@ -31,7 +31,7 @@ body{
 
 .Header{
     grid-column-start: 1;
-    grid-column-end: ;
+    grid-column-end: 4;
 
 }
 
