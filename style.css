@@ -32,6 +32,7 @@ body::before{
     grid-template-columns: 1fr;  
      grid-template-areas:
         "header"
+        "intro"
         "content"
         "navigation"
         "footer";
@@ -169,5 +170,3 @@ button:hover{
         max-width: 65ch;
     }
 }
-
-
