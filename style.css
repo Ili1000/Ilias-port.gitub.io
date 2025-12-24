@@ -30,8 +30,13 @@ body::before{
 
     display: grid;
     grid-template-columns: 1fr;  
+     grid-template-areas:
+        "header"
+        "content"
+        "navigation"
+        "footer";
     grid-auto-rows: auto;
-    gap: 10px;
+    gap: 16px;
 
     padding:10px;
     box-sizing: border-box;
@@ -43,12 +48,24 @@ body::before{
 }
 
 .header{
+    grid-area: header;
+    display: flex;
     grid-column: 1;
     flex-direction: column;
     gap: 12px;
-    text-align: left;
+
+    color: goldenrod;
+    border-radius: 20px;
+    font-size: clamp(32px, 6vw, 70px);
+    text-align: center;
+    align-items: center;
 
 }
+
+.content { grid-area: content; }
+.navigation { grid-area: navigation; }
+.footer { grid-area: footer; }
+
 
 button{
     background-color: black;
