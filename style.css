@@ -76,7 +76,12 @@ body::before{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
     background-color: goldenrod;
+    width: 20%;
+    height: 120%;
+    border-radius: 15px;
+
     
 }
 
