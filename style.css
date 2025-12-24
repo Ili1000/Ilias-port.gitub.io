@@ -23,7 +23,7 @@ body::before{
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     
     font-weight: bold;
@@ -64,7 +64,7 @@ body::before{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: span 1;
-    border-radius: 25;
+    border-radius: 25px;
     align-items: left;
   
 }
@@ -77,8 +77,9 @@ body::before{
     justify-self: center;
     align-self: center;
     
-    width: 1000px;
-    height: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
     background: #b8870b85; 
     padding: 20px 25px;
     border-radius: 12px;
@@ -98,23 +99,18 @@ body::before{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: span 1;
-    border-radius: 25;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;      
     justify-content: center; 
+  
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transform: none;
+    
 
-    width: 500px;
-    height: 500px;
-    background: #b8870b85; 
-    padding: 20px 25px;
-    border-radius: 12px;
-    backdrop-filter: blur(6px);
-    display: flex;
-    gap: 12px;
-    text-align: center;
-
-    transform: translateY(80px) translateX(150px) ;
   
 }
 
@@ -133,7 +129,8 @@ body::before{
     position: static;
     bottom: 10px;   
     width: 95%;
-    height: 5px;
+    height: auto;
+    padding: 15px;
     
     
 }
@@ -145,7 +142,6 @@ button{
     width: 100px;   
     height: 50px;
     font-size: 16px;
-    
     
 }
 
@@ -161,9 +157,10 @@ button:hover{
     color: white;
     border-color:white;
     border-radius: 15px;
-    width: 300px;   
-    height: 100px;
-    font-size: 50px;
+    width: 100%;
+    max-width: 300px;
+    height: 80px;
+    font-size: clamp(20px, 4vw, 40px);
 }
 
 .navigation button:hover{
@@ -190,5 +187,41 @@ button:hover{
     
 }
 
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .header {
+        font-size: 40px;
+        grid-column: 1;
+    }
+
+    .intro {
+        grid-column: 1;
+    }
+
+    .navigation {
+        grid-column: 1;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
+
+    .navigation button {
+        width: 100%;
+        font-size: 24px;
+        height: 70px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+}
 
 
