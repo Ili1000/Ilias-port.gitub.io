@@ -29,12 +29,12 @@ body::before{
     font-size: 20px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr;  
      grid-template-areas:
-        "header header"
-        "content content"
-        "navigation navigation"
-        "footer footer";
+        "header"
+        "content"
+        "navigation"
+        "footer";
     grid-auto-rows: auto;
     gap: 16px;
 
@@ -63,32 +63,38 @@ body::before{
 
 .content {
     grid-area: content;
-    grid-column-start: 1;
-    grid-row-start: 2;
     font-size-adjust: 0.3; }
 
-.navigation { 
+.navigation {
     grid-area: navigation;
-    grid-column-start: 1;
-    grid-row-start: 3;
+
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 16px;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 
-    background-color: goldenrod;
-    width: 20%;
-    height: 120%;
-    border-radius: 15px;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;   /* 🔥 perfect square */
 
-    
+    margin: 0 auto;        /* center horizontally */
+
+    background-color: #b8870b85;
+    border-radius: 20px;
+    padding: 24px;
+    backdrop-filter: blur(6px);
 }
 
 .footer {
-     grid-area: footer;
-     grid-column-start: 1;
-     grid-row-start: 4;
+       grid-area: footer;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+     
      }
 
 
@@ -119,6 +125,7 @@ button:hover{
     max-width: 300px;
     height: 80px;
     font-size: clamp(20px, 4vw, 40px);
+
 }
 
 .navigation button:hover{
