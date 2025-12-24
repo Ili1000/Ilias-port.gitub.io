@@ -57,11 +57,14 @@ body::before{
     text-align: center;
     justify-items: center;
     color: goldenrod;
-    grid-row: 1 / span 2
+    font-size: clamp(30px, 6vw, 60px);
+    
 
 }
 
-.content { grid-area: content; }
+.content {
+     grid-area: content;
+    font-size-adjust: 0.3; }
 
 .navigation { 
     grid-area: navigation;
