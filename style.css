@@ -138,6 +138,23 @@ button:hover{
     cursor: pointer;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
 @media(min-width: 768px) {
 
     .container {
@@ -159,10 +176,10 @@ button:hover{
     .main{
         aspect-ratio: auto;
         width: 100%;
-        max-width: 500px;
+        max-width: 700px;
         padding: 32px 24px;
         height: auto;
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
         justify-self: center;
     }
