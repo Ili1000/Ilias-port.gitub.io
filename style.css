@@ -70,6 +70,7 @@ body::before{
     border-radius: 20px;
     padding: 24px;
     backdrop-filter: blur(6px);
+    height: auto;
 }
 
 .content {
@@ -153,6 +154,13 @@ button:hover{
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.project-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 @media(min-width: 768px) {
