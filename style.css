@@ -73,6 +73,12 @@ body::before{
     height: auto;
 }
 
+.main p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
 .content {
     grid-area: content;
     font-size-adjust: 0.3; 
