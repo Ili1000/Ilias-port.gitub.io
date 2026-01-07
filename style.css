@@ -78,7 +78,7 @@ body::before{
 
 .main p{
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     hyphens: auto;
 }
 
