@@ -59,7 +59,7 @@ body::before{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    max-width: 320px;
+    width: min(100%, 320px);
    
     align-items: stretch;
     justify-content: center;   
