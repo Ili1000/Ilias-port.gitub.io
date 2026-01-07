@@ -63,7 +63,7 @@ body::before{
     width: 100%;
     max-width: 320px;
     aspect-ratio: 1 / 1;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;   
     margin: 0 auto;       
     background-color: #b8870b85;
