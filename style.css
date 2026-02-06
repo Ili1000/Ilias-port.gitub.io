@@ -37,6 +37,7 @@ body::before{
     gap: 16px;
     padding:10px;
     box-sizing: border-box;
+    padding-top: 90px;
 }
 
 .container div{
@@ -53,6 +54,7 @@ body::before{
     font-size: clamp(30px, 6vw, 60px);   
     align-self: center;
     text-align: center;
+    justify-self: center;
 }
 
 .main{
@@ -112,6 +114,81 @@ body::before{
     align-items: center;
     gap: 12px;
      }
+
+.two {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+    background-color: black;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: none; /* standaard dicht (hamburger) */
+    position: absolute;
+    top: 70px;
+    right: 24px;
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 16px;
+    display: none;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: goldenrod;
+}
+
+.hamburger { 
+    color: black;
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: 2px solid goldenrod;
+    outline-offset: 4px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: goldenrod;
+    display: block;
+}
+
+.nav-links.open {
+    display: block;
+}
 
 button{
     background-color: black;
@@ -175,6 +252,24 @@ button:hover{
 
 @media(min-width: 768px) {
 
+        .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 24px;
+        background: none;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+
     .container {
         grid-template-columns: 1fr auto;
         grid-template-areas:
@@ -189,6 +284,7 @@ button:hover{
         align-items: flex-start;
         text-align: left;
         font-size-adjust: 1;
+        justify-self:left ;
     }
 
     .main{
